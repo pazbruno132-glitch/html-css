@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <style>
+        @charset "UTF-8";
+
+        @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+        @font-face {
+        font-family: "bird";
+            src: url(littlebird.ttf);
+        }
+
+        :root{
+            --fonte-importada: "Henny Penny", sans-serif
+            --fonte-baixada: "bird", sans-serif
+        }
+        
+        
+
+        h1{
+            font-size: 2.5em;
+        }
+
+        #p1{
+            font-size: 2.0em;
+    
+        }
+
+        #p2{
+            font-family: var(--fonte-importada);
+            font-size: 2.0em;
+        }
+
+        #p3{
+            font-family: "bird", sans-serif;
+            font-size: 2.0em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes em CSS</h1>
+
+    <p id="p1">Podemos configurar fontes padrão do sistema</p>
+
+    <p id="p2">Ou então usar uma fonte do Google Fonts</p>
+
+    <p id="p3">Ou ainda usar um arquivo local de fontes</p>
+</body>
+</html>
