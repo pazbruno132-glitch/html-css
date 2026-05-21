@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div.padrao{
+            border: 2px solid black;
+            width: 550px;
+            height: 350px;
+            background-color: lightgray;
+        }
+
+        #d1{
+            background-image: url(imagens/pattern001.png);
+            background-repeat: repeat;
+        }
+
+        #d2{
+            background-image: url(imagens/pattern002.png);
+            background-repeat: repeat-x;
+        }
+
+        #d3{
+            background-image: url(imagens/pattern003.png);
+            background-repeat: repeat-y;
+        }
+
+        #d4{
+            background-image: url(imagens/pattern004.png);
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Repetições em background-image</h1>
+    <h2>background-repeat: repeat;</h2>
+    <p>Repete a imagem tanto no sentido vertical, quanto horizontal (padrão).</p>
+    <div class="padrao" id="d1">
+
+    </div>
+
+    <h2>background-repeat: repeat-x</h2>
+    <p>Repete apenas no eixo horizontal.</p>
+    <div class="padrao" id="d2">
+
+    </div>
+
+    <h2>background-repeat: repeat-y;</h2>
+    <p>Repete apenas no eixo vertical</p>
+    <div class="padrao" id="d3">
+
+    </div>
+
+    <h2>background-repeat: no-repeat;</h2>
+    <p>Não repete em nenhum eixo. A imagem só é carregada uma única vez.</p>
+    <div class="padrao" id="d4">
+
+    </div>
+</body>
+</html>
